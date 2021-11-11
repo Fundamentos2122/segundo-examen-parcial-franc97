@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fundamentos2122.github.io/framework-css-franc97/framework.css">
+    <title>Document</title>
+    <style>
+        #title {
+            padding: 0.5em;
+            color: white;
+            font-size: 100px;
+            text-align: center;
+        }
+
+        #izqq {
+            left: 0%;
+        }
+
+        #if {
+            text-align: left;
+            padding: 1em;
+        }
+
+        /* #if input {
+            text-align: right;
+        } */
+
+        .negativo {
+            background-color:darkolivegreen;
+    
+        }
+
+        /* input[type="checkbox"]:checked{
+            box-shadow: 0 0 0 3px hotpink;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="modal-content">
+        <div class="bg-info">
+            <h1 id="title">Lista de Tarea</h1>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <input type="checkbox" name="desplega" coments="#modal_test">
+                <label for="desplega">Ver todos</label>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-3">
+                <button class="btn btn-primary" id="button1" data-toggle="modal"
+                    data-target="#modal_test">Nuevo</button>
+            </div>
+        </div>
+        <div id="tweets">
+            <div class="border-top">
+                <label class="h3" for="">Tarea</label>
+                <p>Francisco Javier Piña!</p>
+                <div class="modal-footer">
+                    <input type="checkbox" name="desplega" logrado="#modal_test">
+                    <label for="desplega">Completada</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="modal text-dark" id="modal_test">
+        <div class="modal-content show">
+            <div class="modal-header border border-bottom">
+                <h5>Agregar tarea</h5>
+
+            </div>
+            <br>
+            <form action="" name="tweetForm">
+                <div class="" id="if">
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="tweet">Titulo</label>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" id="tareaInput" name="tweet" required>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="description">Descripción</label>
+
+                        </div>
+                        <div class="col-6">
+                            <input type="text" id="tareaInput" name="tweet2">
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="date">Fecha</label>
+                        </div>
+                        <div class="col-6">
+                            <input type="date" name="tweet3" id="tareaInput">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn show" data-dismiss="#modal_test" style="background-color: #198754; color: white;"
+                        id="btn-agregar">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="tareas.js"></script>
+</body>
+
+</html>
